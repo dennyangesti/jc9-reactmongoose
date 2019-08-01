@@ -12,6 +12,13 @@ export default (data = init, action) => {
             name: action.payload.name
          }
 
+      case 'LOGOUT_SUCCESS':
+         return {
+            ...data,
+            id: '',
+            name: ''
+         }
+
       default:
          return data
    }

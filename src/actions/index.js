@@ -45,6 +45,16 @@ export const onLogin = (da_email, da_password) => {
 
 }
 
+export const onLogout = () => {
+   // Hapus data di cookie
+   cookie.remove('dataUser')
+
+   // Kirim action ke reducer, untuk hapus data di state
+   return {
+      type: 'LOGOUT_SUCCESS'
+   }
+}
+
 export const keepLogin = (user) => {
    return {
       type: 'LOGIN_SUCCESS',
