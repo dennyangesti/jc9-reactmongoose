@@ -26,7 +26,7 @@ class Profile extends Component {
                <Jumbotron >
                   <div className='d-flex justify-content-center'>
                      <img
-                        src={'http://localhost:2019/users/' + this.state.data._id + '/avatar'}
+                        src={'https://dennyreactmongoose.herokuapp.com/users/' + this.state.data._id + '/avatar'}
                         alt="Please choose your avatar"
                         key={new Date()}
                         className='img-thumbnail' />
