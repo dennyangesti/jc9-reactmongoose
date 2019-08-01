@@ -4,4 +4,4 @@ export default axios.create(
    {
       baseURL: 'https://dennymongoose.herokuapp.com/'
    }
-)
+)   
